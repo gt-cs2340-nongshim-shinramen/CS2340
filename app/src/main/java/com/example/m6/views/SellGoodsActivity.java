@@ -18,7 +18,7 @@ public class SellGoodsActivity extends AppCompatActivity implements SellDialog.S
     TextView waterPrice, furPrice, foodPrice, orePrice, firearmPrice, gamePrice, medicinePrice, machinePrice, narcorticsPrice, robotPrice;
     int water, fur, food, ore, firearm, game, medicine, machine, narcortics, robot;
     TextView credit, bay;
-    Button sell_water;
+    Button sell_water, sell_furs, sell_food, sell_ore, sell_firearms, sell_games, sell_medicine, sell_machines, sell_narcotics, sell_robots;
     Button waterMax, furMax, foodMax, oreMax, firearmMax, gameMax, medicineMax, machineMax, narcorticsMax, robotMax;
     String inputStr = "0";
     Button menuButton;
@@ -66,6 +66,24 @@ public class SellGoodsActivity extends AppCompatActivity implements SellDialog.S
         clickMaxButton(robotMax, robot, Goods.ROBOTS);
         sell_water =findViewById(R.id.sell_num_water);
         clickNumButton(sell_water, water, Goods.WATER);
+        sell_furs =findViewById(R.id.sell_num_furs);
+        clickNumButton(sell_furs, fur, Goods.FURS);
+        sell_food =findViewById(R.id.sell_num_food);
+        clickNumButton(sell_food, food, Goods.FOOD);
+        sell_ore =findViewById(R.id.sell_num_ore);
+        clickNumButton(sell_ore, ore, Goods.ORE);
+        sell_firearms =findViewById(R.id.sell_num_firearms);
+        clickNumButton(sell_firearms, firearm, Goods.FIREARMS);
+        sell_games =findViewById(R.id.sell_num_games);
+        clickNumButton(sell_games, game, Goods.GAMES);
+        sell_medicine =findViewById(R.id.sell_num_medicine);
+        clickNumButton(sell_medicine, medicine, Goods.MEDICINE);
+        sell_machines =findViewById(R.id.sell_num_machines);
+        clickNumButton(sell_machines, machine, Goods.MACHINES);
+        sell_narcotics =findViewById(R.id.sell_num_narcotics);
+        clickNumButton(sell_narcotics, narcortics, Goods.NARCOTICS);
+        sell_robots =findViewById(R.id.sell_num_robots);
+        clickNumButton(sell_robots, robot, Goods.ROBOTS);
     }
     public void clickMaxButton(Button button, final int price, final Goods goods) {
         button.setOnClickListener(new View.OnClickListener() {
