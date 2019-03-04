@@ -43,7 +43,7 @@ public class BuyGoodsActivity extends AppCompatActivity implements BuyDialog.Buy
         player = (Player)getIntent().getSerializableExtra("player");
         Log.d("player", player.getName()+" is into BuyActivity sucessfully" );
 
-        menuButton = findViewById(R.id._buy_menu_button);
+        menuButton = findViewById(R.id.buy_menu_button);
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,7 +146,6 @@ public class BuyGoodsActivity extends AppCompatActivity implements BuyDialog.Buy
             public void onClick(View v) {
                 if(IsAble(goods)){
                     openBuy(goods.toString(), price);
-
                 } else {
                     openAlert();
                 }
